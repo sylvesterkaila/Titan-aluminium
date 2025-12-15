@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan Aluminium Fabricators Ltd</title>
+  <link href="./output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <!-- Heroicons CDN for icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Top Contact Bar -->
+  <div class="bg-blue-900 text-white text-sm hidden md:block">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center space-x-1">
+          <i data-feather="phone" class="w-4 h-4"></i>
+          <span>+254 717543546</span>
+        </span>
+        <span class="flex items-center space-x-1">
+          <i data-feather="mail" class="w-4 h-4"></i>
+          <span>info@titanaluminium.com</span>
+        </span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="#" class="hover:text-blue-300"><i data-feather="facebook"></i></a>
+        <a href="#" class="hover:text-blue-300"><i data-feather="twitter"></i></a>
+        <a href="#" class="hover:text-blue-300"><i data-feather="instagram"></i></a>
+        <a href="#" class="hover:text-blue-300"><i data-feather="linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+    <div class="flex-shrink-0 flex items-center">
+  <img src="./images/logo1.png" alt="Titan Logo" class="h-20 w-60 p-1">
+</div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="home.html" class="text-blue-900 font-semibold hover:text-blue-700">Home</a>
+          <a href="about.html" class="text-blue-900 font-semibold hover:text-blue-700">About Us</a>
+          <a href="services.html" class="text-blue-900 font-semibold hover:text-blue-700">Services</a>
+          <a href="gallery.html" class="text-blue-900 font-semibold hover:text-blue-700">Projects/Gallery</a>
+          <a href="contact.html" class="text-blue-900 font-semibold hover:text-blue-700">Contact</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-blue-900 focus:outline-none">
+            <i data-feather="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="home.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">Home</a>
+      <a href="about.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">About Us</a>
+      <a href="services.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">Services</a>
+      <a href="gallery.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">Projects/Gallery</a>
+      <a href="contact.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Services Introduction Section with Background Image and Inline CSS -->
+<section style="position:relative; background-image:url('./images/modern\ office.jpg'); background-size:cover; background-position:center; padding: 90px 0;">
+  <!-- Overlay -->
+  <div style="position:absolute; inset:0; width:100%; height:100%; background:rgba(12, 20, 40, 0.863); z-index:1;"></div>
+  <!-- Content -->
+  <div style="position:relative; z-index:2; max-width:700px; margin:0 auto; text-align:center; color:#fff; padding:0 1rem;">
+    <h1 style="font-size:2.2rem; font-weight:700; margin-bottom:1.2rem;">Our Services</h1>
+    <p style="font-size:1.15rem; margin-bottom:1.5rem;">
+      At Titan Aluminium Fabricators Ltd, we offer a comprehensive range of aluminium and glass solutions for residential, commercial, and industrial projects. Our team combines expertise, innovation, and quality materials to deliver results that exceed expectations.
+    </p>
+    <p style="font-size:1rem;">
+      Explore our core services below to see how we can help bring your vision to life—whether you need custom windows, doors, partitions, curtain walls, or unique aluminium fabrications.
+    </p>
+  </div>
+</section>
+
+<!-- Services Grid Section Styled Like Featured Projects -->
+<section style="background:#f8fafc; padding: 4rem 0;">
+  <div style="max-width:1100px; margin:0 auto; padding:0 1rem;">
+    <h2 style="font-size:2rem; font-weight:700; color:#1e3a8a; text-align:center; margin-bottom:2.5rem;">What We Offer</h2>
+    <div style="display:grid; grid-template-columns:1fr; gap:2.5rem; align-items:stretch;" class="services-grid">
+      <!-- Service 1 -->
+      <div style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+        <img src="./images/almwindoor.jpeg" alt="Aluminium Windows & Doors" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:1.5rem 1rem; flex:1; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.2rem; margin-bottom:0.5rem;">Aluminium Windows & Doors</h3>
+          <p style="color:#2563eb; font-size:1.05rem;">Custom-designed, energy-efficient, and secure aluminium windows and doors for all types of buildings.</p>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+        <img src="./images/glass partition.jpeg" alt="Glass Partitions" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:1.5rem 1rem; flex:1; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.2rem; margin-bottom:0.5rem;">Glass Partitions</h3>
+          <p style="color:#2563eb; font-size:1.05rem;">Modern glass partitioning solutions for offices and commercial spaces, enhancing openness and light.</p>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+        <img src="./images/acw.jpg" alt="Curtain Walls" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:1.5rem 1rem; flex:1; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.2rem; margin-bottom:0.5rem;">Curtain Walls</h3>
+          <p style="color:#2563eb; font-size:1.05rem;">High-performance aluminium and glass curtain wall systems for impressive building facades.</p>
+        </div>
+      </div>
+      <!-- Service 4 -->
+      <div style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+        <img src="./images/blasteredrailing.jpeg" alt="Balustrades & Railings" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:1.5rem 1rem; flex:1; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.2rem; margin-bottom:0.5rem;">Balustrades & Railings</h3>
+          <p style="color:#2563eb; font-size:1.05rem;">Stylish and safe aluminium and glass balustrades for balconies, staircases, and terraces.</p>
+        </div>
+      </div>
+      <!-- Service 5 -->
+      <div style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+        <img src="./images/shpfrnt.jpeg" alt="Shopfronts & Facades" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:1.5rem 1rem; flex:1; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.2rem; margin-bottom:0.5rem;">Shopfronts & Facades</h3>
+          <p style="color:#2563eb; font-size:1.05rem;">Attractive, secure, and durable shopfronts and facades to enhance your business image.</p>
+        </div>
+      </div>
+      <!-- Service 6 -->
+      <div style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+        <img src="./images/caf.jpeg" alt="Custom Aluminium Fabrication" style="width:100%; height:220px; object-fit:cover;">
+        <div style="padding:1.5rem 1rem; flex:1; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.2rem; margin-bottom:0.5rem;">Custom Aluminium Fabrication</h3>
+          <p style="color:#2563eb; font-size:1.05rem;">Tailored aluminium solutions for unique architectural and industrial requirements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+@media (min-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+</style>
+
+<!-- Why Choose Us / Our Approach Section -->
+<section style="background: #fff; padding: 4rem 0;">
+  <div style="max-width: 1100px; margin: 0 auto; padding: 0 1rem;">
+    <div style="display: flex; flex-direction: column; gap: 2.5rem; align-items: center; justify-content: center;"
+         class="why-choose-flex">
+      <!-- Image (Left) -->
+      <div style="flex:1 1 0; min-width:300px; display:flex; justify-content:center;">
+        <img src="./images/wca.jpeg" alt="Why Choose Us" style="width:100%; max-width:370px; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; object-fit:cover;">
+      </div>
+      <!-- Text (Right) -->
+      <div style="flex:1 1 0; min-width:300px;">
+        <h2 style="font-size:2rem; font-weight:700; color:#1e3a8a; margin-bottom:1.2rem;">Why Choose Titan Aluminium?</h2>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="margin-bottom:1.2rem; display:flex; align-items:flex-start;">
+            <span style="color:#2563eb; font-size:1.5rem; margin-right:0.8rem;">&#10003;</span>
+            <div>
+              <strong>Expertise & Experience:</strong>
+              <div style="color:#2563eb;">Over a decade of delivering quality aluminium and glass solutions in Kenya and beyond.</div>
+            </div>
+          </li>
+          <li style="margin-bottom:1.2rem; display:flex; align-items:flex-start;">
+            <span style="color:#2563eb; font-size:1.5rem; margin-right:0.8rem;">&#10003;</span>
+            <div>
+              <strong>Quality Materials:</strong>
+              <div style="color:#2563eb;">We use only the best, certified materials for durability and safety.</div>
+            </div>
+          </li>
+          <li style="margin-bottom:1.2rem; display:flex; align-items:flex-start;">
+            <span style="color:#2563eb; font-size:1.5rem; margin-right:0.8rem;">&#10003;</span>
+            <div>
+              <strong>Customer-Centric Approach:</strong>
+              <div style="color:#2563eb;">We listen, advise, and deliver tailored solutions for every client.</div>
+            </div>
+          </li>
+          <li style="margin-bottom:1.2rem; display:flex; align-items:flex-start;">
+            <span style="color:#2563eb; font-size:1.5rem; margin-right:0.8rem;">&#10003;</span>
+            <div>
+              <strong>Timely Delivery:</strong>
+              <div style="color:#2563eb;">Projects are completed on schedule, every time.</div>
+            </div>
+          </li>
+          <li style="margin-bottom:1.2rem; display:flex; align-items:flex-start;">
+            <span style="color:#2563eb; font-size:1.5rem; margin-right:0.8rem;">&#10003;</span>
+            <div>
+              <strong>After-Sales Support:</strong>
+              <div style="color:#2563eb;">We stand by our work and support you even after project completion.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+@media (min-width: 900px) {
+  .why-choose-flex {
+    flex-direction: row !important;
+    align-items: stretch !important;
+  }
+}
+</style>
+
+<!-- Process / How We Work Section -->
+<section style="background: #f8fafc; padding: 4rem 0;">
+  <div style="max-width: 1100px; margin: 0 auto; padding: 0 1rem;">
+    <h2 style="font-size:2rem; font-weight:700; color:#1e3a8a; text-align:center; margin-bottom:2.5rem;">Our Process: How We Work</h2>
+    <div style="display: flex; flex-direction: column; gap: 2.5rem; align-items: center; justify-content: center;"
+         class="process-flex">
+      <!-- Step 1 -->
+      <div style="display:flex; align-items:center; gap:1.5rem; width:100%; max-width:900px;">
+        <div style="flex-shrink:0; background:#2563eb; color:#fff; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; font-weight:700; box-shadow:0 2px 12px #2563eb33;">1</div>
+        <div>
+          <h4 style="font-size:1.15rem; font-weight:700; color:#1e3a8a; margin-bottom:0.2rem;">Consultation</h4>
+          <div style="color:#2563eb;">We listen to your needs, assess your site, and offer expert advice and solutions.</div>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div style="display:flex; align-items:center; gap:1.5rem; width:100%; max-width:900px;">
+        <div style="flex-shrink:0; background:#2563eb; color:#fff; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; font-weight:700; box-shadow:0 2px 12px #2563eb33;">2</div>
+        <div>
+          <h4 style="font-size:1.15rem; font-weight:700; color:#1e3a8a; margin-bottom:0.2rem;">Design & Quotation</h4>
+          <div style="color:#2563eb;">We create detailed designs and provide a transparent, competitive quote for your approval.</div>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div style="display:flex; align-items:center; gap:1.5rem; width:100%; max-width:900px;">
+        <div style="flex-shrink:0; background:#2563eb; color:#fff; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; font-weight:700; box-shadow:0 2px 12px #2563eb33;">3</div>
+        <div>
+          <h4 style="font-size:1.15rem; font-weight:700; color:#1e3a8a; margin-bottom:0.2rem;">Fabrication</h4>
+          <div style="color:#2563eb;">Our skilled team manufactures your products using high-quality materials and modern technology.</div>
+        </div>
+      </div>
+      <!-- Step 4 -->
+      <div style="display:flex; align-items:center; gap:1.5rem; width:100%; max-width:900px;">
+        <div style="flex-shrink:0; background:#2563eb; color:#fff; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; font-weight:700; box-shadow:0 2px 12px #2563eb33;">4</div>
+        <div>
+          <h4 style="font-size:1.15rem; font-weight:700; color:#1e3a8a; margin-bottom:0.2rem;">Installation</h4>
+          <div style="color:#2563eb;">We deliver and install with care, ensuring everything fits perfectly and works as intended.</div>
+        </div>
+      </div>
+      <!-- Step 5 -->
+      <div style="display:flex; align-items:center; gap:1.5rem; width:100%; max-width:900px;">
+        <div style="flex-shrink:0; background:#2563eb; color:#fff; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; font-weight:700; box-shadow:0 2px 12px #2563eb33;">5</div>
+        <div>
+          <h4 style="font-size:1.15rem; font-weight:700; color:#1e3a8a; margin-bottom:0.2rem;">After-Sales Support</h4>
+          <div style="color:#2563eb;">We provide ongoing support and maintenance to ensure your satisfaction and peace of mind.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+@media (min-width: 900px) {
+  .process-flex {
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .process-flex > div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+}
+</style>
+
+
+
+<!-- Featured Projects / Gallery Preview Section -->
+<section class="max-w-7xl mx-auto mt-20 px-4">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 text-center">Featured Projects</h2>
+  <p class="text-lg text-gray-700 mb-10 text-center max-w-2xl mx-auto">
+    A glimpse of our recent aluminium fabrication projects. Visit our gallery for more inspiration!
+  </p>
+  <div class="grid gap-6 md:grid-cols-3">
+    <!-- Project 1 -->
+    <div class="overflow-hidden rounded-xl shadow-lg group">
+      <img src="./images/modern office.jpg" alt="Project 1" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="bg-white p-4">
+        <h3 class="text-lg font-bold text-blue-900 mb-1">Modern Office Partition</h3>
+        <p class="text-gray-600 text-sm">Elegant glass and aluminium partition for a Nairobi office.</p>
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="overflow-hidden rounded-xl shadow-lg group">
+      <img src="./images/residential sliding door.jpg" alt="Project 2" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="bg-white p-4">
+        <h3 class="text-lg font-bold text-blue-900 mb-1">Residential Sliding Doors</h3>
+        <p class="text-gray-600 text-sm">Custom aluminium sliding doors for a luxury home.</p>
+      </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="overflow-hidden rounded-xl shadow-lg group">
+      <img src="./images/balcony railing.jpeg" alt="Project 3" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="bg-white p-4">
+        <h3 class="text-lg font-bold text-blue-900 mb-1">Balcony Railings</h3>
+        <p class="text-gray-600 text-sm">Stylish and safe aluminium railings for a city apartment.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center mt-8">
+    <a href="gallery.html" class="bg-blue-900 text-white font-semibold px-6 py-3 rounded shadow hover:bg-blue-700 transition">
+      View Full Gallery
+    </a>
+  </div>
+</section>
+
+<!-- Testimonial Section with Flip Cards -->
+<section style="background:#f8fafc; padding:4rem 0;">
+  <div style="max-width:1100px; margin:0 auto; padding:0 1rem;">
+    <h2 style="font-size:2rem; font-weight:700; color:#1e3a8a; text-align:center; margin-bottom:2.5rem;">What Our Clients Say</h2>
+    <div style="display:grid; grid-template-columns:1fr; gap:2rem;" class="testimonial-flip-grid">
+      <!-- Card 1 -->
+      <div class="flip-card" style="perspective:1000px;">
+        <div class="flip-card-inner" style="position:relative; width:100%; min-height:340px; transition:transform 0.7s; transform-style:preserve-3d;">
+          <!-- Front -->
+          <div class="flip-card-front" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem; position:absolute; width:100%; height:100%; backface-visibility:hidden;">
+            <img src="./images/jemo.jpg" alt="Client 1" style="width:90px; height:90px; border-radius:50%; object-fit:cover; margin-bottom:1rem;">
+            <h3 style="font-weight:700; color:#1e3a8a; font-size:1.1rem;">James Mwangi</h3>
+            <p style="color:#64748b; font-size:0.95rem;">Nairobi, Kenya</p>
+          </div>
+          <!-- Back -->
+          <div class="flip-card-back" style="background:#2563eb; color:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem; position:absolute; width:100%; height:100%; backface-visibility:hidden; transform:rotateY(180deg);">
+            <p style="font-size:1.05rem; text-align:center;">"Titan Aluminium exceeded our expectations with their professionalism and quality. Our office partitions look amazing!"</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="flip-card" style="perspective:1000px;">
+        <div class="flip-card-inner" style="position:relative; width:100%; min-height:340px; transition:transform 0.7s; transform-style:preserve-3d;">
+          <!-- Front -->
+          <div class="flip-card-front" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem; position:absolute; width:100%; height:100%; backface-visibility:hidden;">
+            <img src="./images/sara.jpg" alt="Client 2" style="width:90px; height:90px; border-radius:50%; object-fit:cover; margin-bottom:1rem;">
+            <h3 style="font-weight:700; color:#1e3a8a; font-size:1.1rem;">Sarah Otieno</h3>
+            <p style="color:#64748b; font-size:0.95rem;">Mombasa, Kenya</p>
+          </div>
+          <!-- Back -->
+          <div class="flip-card-back" style="background:#2563eb; color:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem; position:absolute; width:100%; height:100%; backface-visibility:hidden; transform:rotateY(180deg);">
+            <p style="font-size:1.05rem; text-align:center;">"The team was responsive and delivered our aluminium windows on time. Highly recommended for any construction project."</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="flip-card" style="perspective:1000px;">
+        <div class="flip-card-inner" style="position:relative; width:100%; min-height:340px; transition:transform 0.7s; transform-style:preserve-3d;">
+          <!-- Front -->
+          <div class="flip-card-front" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem; position:absolute; width:100%; height:100%; backface-visibility:hidden;">
+            <img src="./images/peta.jpg" alt="Client 3" style="width:90px; height:90px; border-radius:50%; object-fit:cover; margin-bottom:1rem;">
+            <h3 style="font-weight:700; color:#1e3a8a; font-size:1.1rem;">Peter Kamau</h3>
+            <p style="color:#64748b; font-size:0.95rem;">Nakuru, Kenya</p>
+          </div>
+          <!-- Back -->
+          <div class="flip-card-back" style="background:#2563eb; color:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2rem; position:absolute; width:100%; height:100%; backface-visibility:hidden; transform:rotateY(180deg);">
+            <p style="font-size:1.05rem; text-align:center;">"We appreciate the attention to detail and customer service. Our new storefront is both secure and stylish."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+/* Flip card grid responsive */
+@media (min-width: 900px) {
+  .testimonial-flip-grid {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+/* Flip card effect */
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner {
+  transform: rotateY(180deg);
+}
+</style>
+
+<section class="relative w-full h-[400px] md:h-[320px] flex items-center justify-center overflow-hidden mt-20">
+  <!-- Video Background -->
+  <video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted playsinline>
+    <source src="./images/vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Inline style for black overlay -->
+  <div style="position:absolute; inset:0; background:rgba(0,0,0,0.4); z-index:10;"></div>
+  <!-- CTA Content (z-index:20, above overlay) -->
+  <div style="position:absolute; inset:0; z-index:20; display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:100%; text-align:center; padding-left:1rem; padding-right:1rem;">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">Ready to Transform Your Space?</h2>
+    <p class="text-lg md:text-2xl text-white mb-8 drop-shadow">Contact Titan Aluminium for a free consultation and quote today!</p>
+    <a href="https://wa.me/254717543546" target="_blank"
+      class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded shadow-lg text-lg transition">
+      <i data-feather="message-circle" class="inline w-6 h-6 mr-2 -mt-1"></i>
+      Contact Us  
+    </a>
+  </div>
+</section>
+
+
+  <script>
+    // Feather icons
+    feather.replace();
+
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+
+<!-- Footer Section -->
+<footer style="background:#1e3a8a; color:#fff; padding: 4rem 0 2rem 0; margin-top:3rem;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
+    <div style="display:flex; flex-direction:column; gap:2.5rem;" class="footer-flex">
+      <!-- About -->
+<div style="flex:1 1 0; min-width:250px;">
+  <p style="font-size:1.1rem; color:#e0e7ef; max-width:350px;">
+    Titan Aluminium Fabricators Ltd is your trusted partner for innovative, durable, and stylish aluminium and glass solutions in Kenya and beyond.
+  </p>
+  <div style="margin-top:1.5rem; display:flex; gap:1.2rem;">
+    <a href="#" style="color:#fff; font-size:1.5rem;"><i data-feather="facebook"></i></a>
+    <a href="#" style="color:#fff; font-size:1.5rem;"><i data-feather="twitter"></i></a>
+    <a href="#" style="color:#fff; font-size:1.5rem;"><i data-feather="instagram"></i></a>
+    <a href="#" style="color:#fff; font-size:1.5rem;"><i data-feather="linkedin"></i></a>
+  </div>
+</div>
+      <!-- Quick Links -->
+      <div style="flex:1 1 0; min-width:180px;">
+        <h4 style="font-size:1.2rem; font-weight:700; margin-bottom:1rem; color:#fff;">Quick Links</h4>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li><a href="home.html" style="color:#e0e7ef; text-decoration:none; display:block; margin-bottom:0.7rem;">Home</a></li>
+          <li><a href="about.html" style="color:#e0e7ef; text-decoration:none; display:block; margin-bottom:0.7rem;">About Us</a></li>
+          <li><a href="services.html" style="color:#e0e7ef; text-decoration:none; display:block; margin-bottom:0.7rem;">Services</a></li>
+          <li><a href="gallery.html" style="color:#e0e7ef; text-decoration:none; display:block; margin-bottom:0.7rem;">Projects/Gallery</a></li>
+          <li><a href="contact.html" style="color:#e0e7ef; text-decoration:none; display:block;">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div style="flex:1 1 0; min-width:220px;">
+        <h4 style="font-size:1.2rem; font-weight:700; margin-bottom:1rem; color:#fff;">Contact Us</h4>
+        <p style="margin-bottom:0.7rem;"><i data-feather="map-pin" style="margin-right:0.5rem;"></i> Nairobi, Kenya</p>
+        <p style="margin-bottom:0.7rem;"><i data-feather="phone" style="margin-right:0.5rem;"></i> +254 717543546</p>
+        <p style="margin-bottom:0.7rem;"><i data-feather="mail" style="margin-right:0.5rem;"></i> info@titanaluminium.com</p>
+        
+      </div>
+      <!-- Newsletter -->
+      <div style="flex:1 1 0; min-width:250px;">
+        <h4 style="font-size:1.2rem; font-weight:700; margin-bottom:1rem; color:#fff;">Subscribe to Our Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Your email address" required
+            style="padding:0.7rem 1rem; border:none; border-radius:0.5rem 0 0 0.5rem; outline:none; width:65%; max-width:220px;">
+          
+            <button type="submit"
+          
+            style="padding:0.7rem 1.2rem; background:#2563eb; color:#fff; border:none; border-radius:0 0.5rem 0.5rem 0; font-weight:600; cursor:pointer;">
+    
+            Subscribe
+          </button>
+        </form>
+        <p style="font-size:0.95rem; color:#e0e7ef; margin-top:0.7rem;">Get updates on our latest projects and offers.</p>
+      </div>
+    </div>
+    <hr style="border:0; border-top:1px solid #fcfeff; margin:2.5rem 0 1.5rem 0;">
+    <div style="text-align:center; color:#e0e7ef; font-size:1rem;">
+      &copy; 2025 Titan Aluminium Fabricators Ltd. All rights reserved.
+    </div>
+  </div>
+</footer>
+<script>
+  feather.replace();
+</script>
+<style>
+@media (min-width: 900px) {
+  .footer-flex {
+    flex-direction: row !important;
+    gap: 2.5rem !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+  }
+}
+footer a:hover {
+  color: #38bdf8 !important;
+  text-decoration: underline;
+}
+</style>
+</body>
+</html>
+
+
+<!-- WhatsApp Chat Widget Script -->
+<script type="text/javascript">
+  (function () {
+    var options = {
+      whatsapp: "+254717543546", // Your WhatsApp number
+      call_to_action: "Message us", // Call to action
+      position: "right", // Position may be 'right' or 'left'
+      pre_filled_message: "Hello, I have a question about your aluminium services.", // Optional
+    };
+    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>

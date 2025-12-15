@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan Aluminium Fabricators Ltd</title>
+  <link href="./output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <!-- Heroicons CDN for icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Top Contact Bar -->
+  <div class="bg-blue-900 text-white text-sm hidden md:block">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center space-x-1">
+          <i data-feather="phone" class="w-4 h-4"></i>
+          <span>+254 717543546</span>
+        </span>
+        <span class="flex items-center space-x-1">
+          <i data-feather="mail" class="w-4 h-4"></i>
+          <span>info@titanaluminium.com</span>
+        </span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="#" class="hover:text-blue-300"><i data-feather="facebook"></i></a>
+        <a href="#" class="hover:text-blue-300"><i data-feather="twitter"></i></a>
+        <a href="#" class="hover:text-blue-300"><i data-feather="instagram"></i></a>
+        <a href="#" class="hover:text-blue-300"><i data-feather="linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+    <div class="flex-shrink-0 flex items-center">
+  <img src="./images/logo1.png" alt="Titan Logo" class="h-20 w-60 p-1">
+</div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="home.html" class="text-blue-900 font-semibold hover:text-blue-700">Home</a>
+          <a href="about.html" class="text-blue-900 font-semibold hover:text-blue-700">About Us</a>
+          <a href="services.html" class="text-blue-900 font-semibold hover:text-blue-700">Services</a>
+          <a href="gallery.html" class="text-blue-900 font-semibold hover:text-blue-700">Projects/Gallery</a>
+          <a href="contact.html" class="text-blue-900 font-semibold hover:text-blue-700">Contact</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-blue-900 focus:outline-none">
+            <i data-feather="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="home.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">Home</a>
+      <a href="about.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">About Us</a>
+      <a href="services.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">Services</a>
+      <a href="gallery.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">Projects/Gallery</a>
+      <a href="contact.html" class="block py-2 text-blue-900 font-semibold hover:text-blue-700">Contact</a>
+    </div>
+  </nav>
+
+
+  
+  <!-- Project Gallery Section -->
+<section style="background:#f8fafc; padding:4rem 0;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 1rem;">
+    <h2 style="font-size:2rem; font-weight:700; color:#1e3a8a; text-align:center; margin-bottom:2.5rem;">
+      Project Gallery
+    </h2>
+    <div id="gallery-grid" style="display:grid; grid-template-columns:1fr; gap:2rem;" class="gallery-grid">
+      <!-- Project 1 -->
+      <div class="gallery-item" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden;">
+        <img src="./images/office.jpeg" alt="Project 1" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Modern Office Partition</h3>
+          <p style="color:#2563eb; font-size:1rem;">Elegant glass and aluminium partitioning for a corporate office in Nairobi.</p>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="gallery-item" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden;">
+        <img src="./images/slide.jpeg" alt="Project 2" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Residential Sliding Doors</h3>
+          <p style="color:#2563eb; font-size:1rem;">Custom aluminium sliding doors for a luxury home.</p>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="gallery-item" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden;">
+        <img src="./images/balc.jpeg" alt="Project 3" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Balcony Railings</h3>
+          <p style="color:#2563eb; font-size:1rem;">Stylish and safe aluminium railings for a city apartment.</p>
+        </div>
+      </div>
+      <!-- Project 4 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/curtain.jpeg" alt="Project 4" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Curtain Wall Facade</h3>
+          <p style="color:#2563eb; font-size:1rem;">A stunning curtain wall system for a commercial building.</p>
+        </div>
+      </div>
+      <!-- Project 5 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/shopfront.jpeg" alt="Project 5" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Shopfront Installation</h3>
+          <p style="color:#2563eb; font-size:1rem;">Modern and secure aluminium shopfront for a retail store.</p>
+        </div>
+      </div>
+      <!-- Project 6 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/custom.jpeg" alt="Project 6" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Project Consulting & Custom Design</h3>
+          <p style="color:#2563eb; font-size:1rem;">Professional input for architects, developers, or homeowners seeking tailored aluminium solutions..</p>
+        </div>
+      </div>
+
+      <!-- Project 7 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/vent.jpg" alt="Project 7" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Louver Systems & Ventilated Facades</h3>
+          <p style="color:#2563eb; font-size:1rem;">For modern buildings needing both ventilation and aesthetics. Great for energy efficiency.</p>
+        </div>
+      </div>
+
+      <!-- Project 8 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/outdoor.jpeg" alt="Project 8" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Aluminium Pergolas & Outdoor Structures</h3>
+          <p style="color:#2563eb; font-size:1rem;">Stylish outdoor extensions or shades made from aluminium — low maintenance and durable.</p>
+        </div>
+      </div>
+
+      <!-- Project 9 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/light.jpg" alt="Project 9" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Skylights & Aluminium-Framed Roof Lights</h3>
+          <p style="color:#2563eb; font-size:1rem;">Natural lighting solutions using aluminium frames and safety glass for rooftops or corridors.</p>
+        </div>
+      </div>
+
+      <!-- Project 10 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/kitchen.jpg" alt="Project 10" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Aluminium Cabinets & Shelving</h3>
+          <p style="color:#2563eb; font-size:1rem;">Ideal for retail displays, offices, or kitchens — fire-resistant, sleek, and sturdy.</p>
+        </div>
+      </div>
+
+      <!-- Project 11 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/partitioningloo.jpeg" alt="Project 11" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Aluminium Glass Partitioning</h3>
+          <p style="color:#2563eb; font-size:1rem;">Enhance transparency and space definition with stylish aluminium glass partitioning, ideal for conference rooms, showrooms, and modern workspaces.</p>
+        </div>
+      </div>
+
+      <!-- Project 12 (hidden by default) -->
+      <div class="gallery-item extra-gallery" style="background:#fff; border-radius:1.2rem; box-shadow:0 4px 24px #2563eb22; overflow:hidden; display:none;">
+        <img src="./images/castomalm.jpeg" alt="Project 12" style="width:100%; height:260px; object-fit:cover;">
+        <div style="padding:1.2rem;">
+          <h3 style="font-weight:700; color:#1e3a8a; font-size:1.15rem; margin-bottom:0.5rem;">Custom Aluminium Fabrication</h3>
+          <p style="color:#2563eb; font-size:1rem;">From concept to creation – we build tailored aluminium structures to match your project’s unique needs.</p>
+        </div>
+      </div>
+
+      
+      <!-- Add more hidden projects as needed -->
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <button id="toggle-gallery-btn"
+        style="background:#2563eb; color:#fff; font-weight:600; padding:0.9rem 2.2rem; border:none; border-radius:0.7rem; font-size:1.1rem; cursor:pointer; box-shadow:0 2px 12px #2563eb33;">
+        View More
+      </button>
+    </div>
+  </div>
+</section>
+<style>
+@media (min-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+</style>
+
+<section class="relative w-full h-[400px] md:h-[320px] flex items-center justify-center overflow-hidden mt-20">
+  <!-- Video Background -->
+  <video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted playsinline>
+    <source src="./images/vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Inline style for black overlay -->
+  <div style="position:absolute; inset:0; background:rgba(0,0,0,0.4); z-index:10;"></div>
+  <!-- CTA Content (z-index:20, above overlay) -->
+  <div style="position:absolute; inset:0; z-index:20; display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:100%; text-align:center; padding-left:1rem; padding-right:1rem;">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">Ready to Transform Your Space?</h2>
+    <p class="text-lg md:text-2xl text-white mb-8 drop-shadow">Contact Titan Aluminium for a free consultation and quote today!</p>
+    <a href="https://wa.me/254717543546" target="_blank"
+      class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded shadow-lg text-lg transition">
+      <i data-feather="message-circle" class="inline w-6 h-6 mr-2 -mt-1"></i>
+      Contact Us  
+    </a>
+  </div>
+</section>
+<br>
+
+
+<!-- WhatsApp Chat Section: Chat box left, wordings right -->
+<div style="max-width:900px; margin:0 auto; gap:2.5rem; align-items:center; justify-content:center;"
+     class="flex flex-col-reverse md:flex-row md:items-start md:justify-between px-4">
+    <!-- Left: WhatsApp Chat Box -->
+    <div style="flex:1 1 340px; min-width:300px; display:flex; justify-content:center;">
+      <div style="width:340px; background:#fff; border-radius:1.2rem; box-shadow:0 2px 16px #2563eb22; overflow:hidden; display:flex; flex-direction:column;">
+        <!-- WhatsApp Header -->
+        <div style="background:#075e54; color:#fff; display:flex; align-items:center; gap:1rem; padding:1rem 1.2rem;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:38px; height:38px; border-radius:50%; background:#fff; padding:4px;">
+          <div>
+            <div style="font-weight:700; font-size:1.15rem;">Titan Aluminium</div>
+            <div style="font-size:0.98rem; color:#b2dfdb;">online</div>
+          </div>
+        </div>
+        <!-- Chat Area -->
+        <div style="flex:1; background:#ece5dd; padding:1.2rem; min-height:120px;">
+          <div style="background:#fff; color:#333; border-radius:1rem 1rem 1rem 0.3rem; padding:0.8rem 1rem; max-width:80%; margin-bottom:1rem; box-shadow:0 1px 4px #0001;">
+            Hi there! 👋<br>
+            How can we help you today?
+          </div>
+        </div>
+         <!-- Input Area -->
+        <form id="whatsapp-chat-form" style="display:flex; align-items:center; gap:0.5rem; background:#f7f7f7; padding:0.7rem 1rem;">
+          <input id="whatsapp-message" type="text" placeholder="Type your message..." style="flex:1; border-radius:2rem; border:1px solid #bdbdbd; padding:0.7rem 1.2rem; font-size:1.05rem; outline:none;">
+          <button type="submit" style="background:#25D366; border:none; border-radius:50%; width:42px; height:42px; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:background 0.2s;">
+            <svg width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M2.01 21l1.43-5.14c-1.14-2.02-1.43-4.36-.8-6.64C3.6 4.36 8.28 1.1 13.07 2.13c4.79 1.03 8.05 5.71 7.02 10.5-1.03 4.79-5.71 8.05-10.5 7.02-1.19-.26-2.31-.7-3.31-1.32L2.01 21zm6.85-3.14c.91.54 1.92.92 3.01 1.15 3.88.83 7.7-1.67 8.53-5.55.83-3.88-1.67-7.7-5.55-8.53-3.88-.83-7.7 1.67-8.53 5.55-.54 2.54.13 5.13 1.81 7.09l-.97 3.5 3.5-.97zm2.41-2.41c-.1-.1-.2-.21-.29-.32-.09-.11-.17-.23-.25-.36-.08-.13-.15-.27-.21-.41-.06-.14-.11-.29-.15-.44-.04-.15-.07-.31-.09-.47-.02-.16-.03-.33-.03-.5 0-.17.01-.34.03-.5.02-.16.05-.32.09-.47.04-.15.09-.3.15-.44.06-.14.13-.28.21-.41.08-.13.16-.25.25-.36.09-.11.19-.22.29-.32.1-.1.21-.19.32-.29.11-.09.23-.17.36-.25.13-.08.27-.15.41-.21.14-.06.29-.11.44-.15.15-.04.31-.07.47-.09.16-.02.33-.03.5-.03.17 0 .34.01.5.03.16.02.32.05.47.09.15.04.3.09.44.15.14.06.28.13.41.21.13.08.25.16.36.25.11.09.22.19.32.29.1.1.19.21.29.32.09.11.17.23.25.36.08.13.15.27.21.41.06.14.11.29.15.44.04.15.07.31.09.47.02.16.03.33.03.5 0 .17-.01.34-.03.5-.02.16-.05.32-.09.47-.04.15-.09.3-.15.44-.06.14-.13.28-.21.41-.08.13-.16.25-.25.36-.09.11-.19.22-.29.32-.1.1-.21.19-.32.29-.11.09-.23.17-.36.25-.13.08-.27.15-.41.21-.14.06-.29.11-.44.15-.15.04-.31.07-.47.09-.16.02-.33.03-.5.03-.17 0-.34-.01-.5-.03-.16-.02-.32-.05-.47-.09-.15-.04-.3-.09-.44-.15-.14-.06-.28-.13-.41-.21-.13-.08-.25-.16-.36-.25-.11-.09-.22-.19-.32-.29z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Right: Wordings -->
+    <div style="flex:1 1 340px; min-width:300px; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding-left:2rem;">
+      <h2 style="font-size:2rem; font-weight:700; color:#075e54; margin-bottom:1rem;">Chat with us on WhatsApp</h2>
+      <p style="font-size:1.1rem; color:#333;">
+        Start a conversation instantly!<br>
+        Our team is ready to help you with quotes, inquiries, or any support you need.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('whatsapp-chat-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var message = document.getElementById('whatsapp-message').value.trim();
+      if(message) {
+        // Replace with your WhatsApp number in international format, e.g. 254712345678 (no + or spaces)
+        var phone = "254717543546";
+        var url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+        window.open(url, '_blank');
+      }
+    });
+  </script>
+</section>
+
+
+<script>
+  // View More/View Less Gallery
+  const toggleBtn = document.getElementById('toggle-gallery-btn');
+  const extraItems = document.querySelectorAll('.extra-gallery');
+  let expanded = false;
+  toggleBtn.addEventListener('click', function() {
+    expanded = !expanded;
+    extraItems.forEach(item => {
+      item.style.display = expanded ? 'block' : 'none';
+    });
+    toggleBtn.textContent = expanded ? 'View Less' : 'View More';
+  });
+</script>
+  
+<!-- WhatsApp Chat Widget Script -->
+<script type="text/javascript">
+  (function () {
+    var options = {
+      whatsapp: "+254717543546", // Your WhatsApp number
+      call_to_action: "Message us", // Call to action
+      position: "right", // Position may be 'right' or 'left'
+      pre_filled_message: "Hello, I have a question about your aluminium services.", // Optional
+    };
+    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+  <script>
+    // Feather icons
+    feather.replace();
+
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+
+<!-- Footer Section -->
+<footer style="background:#1e3a8a; color:#fff; padding: 4rem 0 2rem 0; margin-top:3rem;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
+    <div style="display:flex; flex-direction:column; gap:2.5rem;" class="footer-flex">
+      <!-- About -->
+<div style="flex:1 1 0; min-width:250px;">
+  <p style="font-size:1.1rem; color:#e0e7ef; max-width:350px;">
+    Titan Aluminium Fabricators Ltd is your trusted partner for innovative, durable, and stylish aluminium and glass solutions in Kenya and beyond.
+  </p>
+  <div style="margin-top:1.5rem; display:flex; gap:1.2rem;">
+    <a href="#" style="color:#fff; font-size:1.5rem;"><i data-feather="facebook"></i></a>
+    <a href="#" style="color:#fff; font-size:1.5rem;"><i data-feather="twitter"></i></a>
+    <a href="#" style="color:#fff; font-size:1.5rem;"><i data-feather="instagram"></i></a>
+    <a href="#" style="color:#fff; font-size:1.5rem;"><i data-feather="linkedin"></i></a>
+  </div>
+</div>
+      <!-- Quick Links -->
+      <div style="flex:1 1 0; min-width:180px;">
+        <h4 style="font-size:1.2rem; font-weight:700; margin-bottom:1rem; color:#fff;">Quick Links</h4>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li><a href="home.html" style="color:#e0e7ef; text-decoration:none; display:block; margin-bottom:0.7rem;">Home</a></li>
+          <li><a href="about.html" style="color:#e0e7ef; text-decoration:none; display:block; margin-bottom:0.7rem;">About Us</a></li>
+          <li><a href="services.html" style="color:#e0e7ef; text-decoration:none; display:block; margin-bottom:0.7rem;">Services</a></li>
+          <li><a href="gallery.html" style="color:#e0e7ef; text-decoration:none; display:block; margin-bottom:0.7rem;">Projects/Gallery</a></li>
+          <li><a href="contact.html" style="color:#e0e7ef; text-decoration:none; display:block;">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div style="flex:1 1 0; min-width:220px;">
+        <h4 style="font-size:1.2rem; font-weight:700; margin-bottom:1rem; color:#fff;">Contact Us</h4>
+        <p style="margin-bottom:0.7rem;"><i data-feather="map-pin" style="margin-right:0.5rem;"></i> Nairobi, Kenya</p>
+        <p style="margin-bottom:0.7rem;"><i data-feather="phone" style="margin-right:0.5rem;"></i> +254 717543546</p>
+        <p style="margin-bottom:0.7rem;"><i data-feather="mail" style="margin-right:0.5rem;"></i> info@titanaluminium.com</p>
+        
+      </div>
+      <!-- Newsletter -->
+      <div style="flex:1 1 0; min-width:250px;">
+        <h4 style="font-size:1.2rem; font-weight:700; margin-bottom:1rem; color:#fff;">Subscribe to Our Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Your email address" required
+            style="padding:0.7rem 1rem; border:none; border-radius:0.5rem 0 0 0.5rem; outline:none; width:65%; max-width:220px;">
+          
+            <button type="submit"
+          
+            style="padding:0.7rem 1.2rem; background:#2563eb; color:#fff; border:none; border-radius:0 0.5rem 0.5rem 0; font-weight:600; cursor:pointer;">
+    
+            Subscribe
+          </button>
+        </form>
+        <p style="font-size:0.95rem; color:#e0e7ef; margin-top:0.7rem;">Get updates on our latest projects and offers.</p>
+      </div>
+    </div>
+    <hr style="border:0; border-top:1px solid #fcfeff; margin:2.5rem 0 1.5rem 0;">
+    <div style="text-align:center; color:#e0e7ef; font-size:1rem;">
+      &copy; 2025 Titan Aluminium Fabricators Ltd. All rights reserved.
+    </div>
+  </div>
+</footer>
+<script>
+  feather.replace();
+</script>
+<style>
+@media (min-width: 900px) {
+  .footer-flex {
+    flex-direction: row !important;
+    gap: 2.5rem !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+  }
+}
+footer a:hover {
+  color: #38bdf8 !important;
+  text-decoration: underline;
+}
+</style>
+</body>
+</html>
